@@ -12,19 +12,22 @@ export class AppComponent implements OnInit {
       firstName: "John",
       lastName: "Doe",
       email: "john.doe@company.com",
-      isPremiumMember: true
+      isPremiumMember: true,
+      birthday: 633913200000
     },
     {
       firstName: "Jan",
       lastName: "Kowalski",
       email: "jan.kowalski@company.com",
-      isPremiumMember: false
+      isPremiumMember: false,
+      birthday: 395272800000
     },
     {
       firstName: "Joanna",
       lastName: "Nowak",
       email: "joanna.nowak@company.com",
-      isPremiumMember: false
+      isPremiumMember: false,
+      birthday: -162349200000
     }
   ];
 
