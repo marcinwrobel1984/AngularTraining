@@ -1,0 +1,16 @@
+[{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@company.com",
+  "isPremiumMember": true
+}, {
+  "firstName": "Jan",
+  "lastName": "Kowalski",
+  "email": "jan.kowalski@company.com",
+  "isPremiumMember": false
+}, {
+  "firstName": "Joanna",
+  "lastName": "Nowak",
+  "email": "joanna.nowak@company.com",
+  "isPremiumMember": false
+}]

@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularTraining": {
+    "angular-training": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AngularTraining",
+            "outputPath": "dist/angular-training",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -66,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AngularTraining:build"
+            "browserTarget": "angular-training:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AngularTraining:build:production"
+              "browserTarget": "angular-training:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularTraining:build"
+            "browserTarget": "angular-training:build"
           }
         },
         "test": {
@@ -114,15 +118,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularTraining:serve"
+            "devServerTarget": "angular-training:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularTraining:serve:production"
+              "devServerTarget": "angular-training:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "AngularTraining"
+  "defaultProject": "angular-training"
 }
